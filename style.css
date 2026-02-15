@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f1a;
+  color: white;
+  text-align: center;
+}
+
+/* HERO SECTION */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ff0080, #7928ca, #2afadf, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content span {
+  color: #ffcc00;
+}
+
+.content h2 {
+  margin: 15px 0;
+}
+
+.main-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* PRICING */
+
+.pricing {
+  padding: 80px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1a1a2e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 250px;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(255,0,128,0.4);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.price {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #ffcc00;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 80px 20px;
+  background: #111;
+}
+
+.contact-buttons {
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.call { background: #00c853; color: white; }
+.whatsapp { background: #25D366; color: white; }
+.instagram { background: #e1306c; color: white; }
+.email { background: #ff5722; color: white; }
+
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+footer {
+  padding: 20px;
+  background: black;
+  font-size: 14px;
+}
